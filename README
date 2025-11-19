@@ -4,65 +4,58 @@ A Python automation script using **Selenium** and **Microsoft Edge** to play Coo
 
 This project pairs the practical automation script (`cookie_bot.py`) with a detailed microeconomic analysis (`ECONOMICS_OF_COOKIE_CLICKER.md`) to show how automation can achieve the theoretical optimum in resource allocation.
 
-## 🚀 Script Overview
+---
+
+## 🚀 1. The Automation Script (`cookie_bot.py`)
 
 The bot executes five key actions, all directly related to maximizing the **Marginal Return Per Cost (MRPC)** of investment:
 
 | Bot Function (Code) | Economic Principle (Article) | Optimization Goal |
 | :--- | :--- | :--- |
 | **`cookie.click()`** | Maximize Short-Run Production | Generate working capital stock. |
-| **`buy_best_building()`** | **Capital Deepening & MRPC** | Continuously reinvest in the highest-yield, most efficient assets (buildings). |
+| **`buy_highest_mrpc_building()`** | **Capital Deepening & MRPC** | Continuously reinvest in the highest-yield, most efficient assets. |
 | **`buy_upgrades()`** | **Endogenous Growth Theory** | Immediately adopt technology to permanently raise the production frontier (productivity). |
 | **`click_golden_cookies()`** | **Stochastic Productivity Shocks** | Capture random market windfalls instantly to maximize the multiplicative effect. |
 | **`pop_wrinklers()`** | **Leveraging Compounding Capital** | Harvest high-interest savings to fund the next round of large-scale asset purchases. |
 
-## 🛠️ Setup and Installation
+### 🛠️ Setup and Installation
 
-### Prerequisites
-
-1.  **Python 3.x**
-2.  **Microsoft Edge** browser installed.
-3.  The **Microsoft Edge WebDriver** (often installed automatically with the latest Edge, but may need manual download if not found by Selenium).
-
-### Setup Steps
-
-1.  **Clone the Repository:**
-    ```bash
-    git clone [YOUR_REPO_URL]
-    cd extreme-cookie-bot
-    ```
-2.  **Install Dependencies:**
-    You only need `selenium`.
-    ```bash
-    pip install selenium
-    ```
+1.  **Prerequisites:** Python 3.x and Microsoft Edge browser.
+2.  **Install Dependencies:** `pip install selenium`
 3.  **Run the Bot:**
     ```bash
     python cookie_bot.py
     ```
-    The script will open a new Edge window, navigate to Cookie Clicker, and begin the automation loop.
+    *(The bot is configured to automatically load game data using JavaScript injection, or you can paste a save string into the script.)*
 
 ---
 
-## 🧠 Economic Theory
+## 📈 2. The Economic Advisor (`economic_advisor.py`)
+
+This standalone tool allows the user to manually apply the bot's core economic logic to any two or more assets in the game, turning the theory into a practical calculator.
+
+### Analysis Modes:
+
+The script offers two critical decision-making modes, driven by inputting your current Cookies Per Second (CPS) and asset costs/gains:
+
+| Mode | Economic Goal | What it Answers |
+| :--- | :--- | :--- |
+| **1. MRPC Comparison** | **Marginal Analysis** | Which of the currently *affordable* assets (buildings or upgrades) gives the highest CPS gain per cookie spent? |
+| **2. Intertemporal Analysis** | **Opportunity Cost** | Should I *buy a cheap asset now* to boost CPS, or *save all my money* to reach the next huge expensive asset faster? |
+
+### How to Use the Advisor:
+
+1.  **Save** the companion script as `economic_advisor.py`.
+2.  **Run** the advisor from your terminal:
+    ```bash
+    python economic_advisor.py
+    ```
+3.  Follow the prompts to enter your current CPS and the details for the assets you are comparing.
+
+---
+
+## 🧠 3. Economic Theory
 
 For a full, in-depth explanation of the economic models and optimization strategies implemented by this code, please read the accompanying article:
 
 **[📚 The Economics of Cookie Clicker: Small Business Optimization and the Quest for Maximum ROI](ECONOMICS_OF_COOKIE_CLICKER.md)**
-
----
-
-## ⚙️ Configuration
-
-You can easily adjust the bot's behavior by modifying the constants at the top of `cookie_bot.py`:
-
-```python
-# ============================================================
-# CONFIGURATION
-# ============================================================
-
-CLICK_INTERVAL = 0.0001      # How fast the cookie is clicked (affects lag!)
-UPGRADE_INTERVAL = 0.5       # How often to check/buy upgrades
-BUILD_INTERVAL = 1.5         # How often to check/buy the best building
-RUN_MINUTES = 5              # Total run time
-# ... and so on
