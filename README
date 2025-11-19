@@ -1,0 +1,68 @@
+# 🍪 EXTREME COOKIE CLICKER BOT (EDGE EDITION)
+
+A Python automation script using **Selenium** and **Microsoft Edge** to play Cookie Clicker with a focus on **economic optimization**.
+
+This project pairs the practical automation script (`cookie_bot.py`) with a detailed microeconomic analysis (`ECONOMICS_OF_COOKIE_CLICKER.md`) to show how automation can achieve the theoretical optimum in resource allocation.
+
+## 🚀 Script Overview
+
+The bot executes five key actions, all directly related to maximizing the **Marginal Return Per Cost (MRPC)** of investment:
+
+| Bot Function (Code) | Economic Principle (Article) | Optimization Goal |
+| :--- | :--- | :--- |
+| **`cookie.click()`** | Maximize Short-Run Production | Generate working capital stock. |
+| **`buy_best_building()`** | **Capital Deepening & MRPC** | Continuously reinvest in the highest-yield, most efficient assets (buildings). |
+| **`buy_upgrades()`** | **Endogenous Growth Theory** | Immediately adopt technology to permanently raise the production frontier (productivity). |
+| **`click_golden_cookies()`** | **Stochastic Productivity Shocks** | Capture random market windfalls instantly to maximize the multiplicative effect. |
+| **`pop_wrinklers()`** | **Leveraging Compounding Capital** | Harvest high-interest savings to fund the next round of large-scale asset purchases. |
+
+## 🛠️ Setup and Installation
+
+### Prerequisites
+
+1.  **Python 3.x**
+2.  **Microsoft Edge** browser installed.
+3.  The **Microsoft Edge WebDriver** (often installed automatically with the latest Edge, but may need manual download if not found by Selenium).
+
+### Setup Steps
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone [YOUR_REPO_URL]
+    cd extreme-cookie-bot
+    ```
+2.  **Install Dependencies:**
+    You only need `selenium`.
+    ```bash
+    pip install selenium
+    ```
+3.  **Run the Bot:**
+    ```bash
+    python cookie_bot.py
+    ```
+    The script will open a new Edge window, navigate to Cookie Clicker, and begin the automation loop.
+
+---
+
+## 🧠 Economic Theory
+
+For a full, in-depth explanation of the economic models and optimization strategies implemented by this code, please read the accompanying article:
+
+**[📚 The Economics of Cookie Clicker: Small Business Optimization and the Quest for Maximum ROI](ECONOMICS_OF_COOKIE_CLICKER.md)**
+
+---
+
+## ⚙️ Configuration
+
+You can easily adjust the bot's behavior by modifying the constants at the top of `cookie_bot.py`:
+
+```python
+# ============================================================
+# CONFIGURATION
+# ============================================================
+
+CLICK_INTERVAL = 0.0001      # How fast the cookie is clicked (affects lag!)
+UPGRADE_INTERVAL = 0.5       # How often to check/buy upgrades
+BUILD_INTERVAL = 1.5         # How often to check/buy the best building
+RUN_MINUTES = 5              # Total run time
+# ... and so on
