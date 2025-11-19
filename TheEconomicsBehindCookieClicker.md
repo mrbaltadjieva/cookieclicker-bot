@@ -34,7 +34,7 @@ $$
 MRPC = \frac{\text{Cookies Per Second (CPS) Gained}}{\text{Cost of Building}}
 $$
 
-### 🧠 **Practical Example: Choosing Your Next Investment**
+### 🧠 **Practical Example: Comparing Two Investments**
 
 To play like the bot, you must calculate the MRPC for every asset before buying. Imagine you have 1,000 cookies and are deciding between two buildings:
 
@@ -52,7 +52,62 @@ To play like the bot, you must calculate the MRPC for every asset before buying.
 
 ---
 
-## 3. 📈 Upgrades: The Highest ROI Investment
+## 3. ⏳ Intertemporal Optimization: Buy Now or Save?
+
+A simple MRPC calculation doesn't account for **time**. When faced with a choice between buying a cheap product now or saving up for a much more powerful (but distant) expensive product, we must evaluate the **opportunity cost of waiting.**
+
+### The Core Question: Is the immediate gain from the cheap product worth more than its cost during the wait time?
+
+The bot implicitly performs this calculation to ensure it doesn't **hoard capital** unnecessarily. If you buy the cheap asset, your CPS increases immediately, meaning you earn the expensive asset faster.
+
+$$
+\text{Wait Time} = \frac{\text{Expensive Product Cost}}{\text{Current CPS}}
+$$
+
+$$
+\text{Extra Earnings} = \text{Cheap Product CPS Gain} \times \text{Wait Time}
+$$
+
+**The Rule:** If $\text{Extra Earnings} > \text{Cheap Product Cost}$, **buy the cheap product now.**
+
+### 💡 Example: Buy Cheap Now
+
+Imagine this scenario during the early game:
+
+| Product | Cost | CPS Gained |
+| :--- | :--- | :--- |
+| **Cheap Asset (A)** | 100 cookies | 1 CPS |
+| **Expensive Asset (B)** | 130,000 cookies | 260 CPS |
+| **Your Current CPS** | N/A | 10 CPS |
+
+1.  **Time to earn B (Wait Time):** $\frac{130,000}{10} = 13,000 \text{ seconds}$
+2.  **Extra Earnings from A during Wait Time:** $1 \text{ CPS} \times 13,000 \text{ seconds} = 13,000 \text{ cookies}$
+
+Since the **Extra Earnings (13,000)** are much greater than the **Cheap Asset Cost (100)**, you should **BUY the cheap asset now**. The short-term increase in production far outweighs its initial cost.
+
+### 🌟 Special Case: The Two Most Expensive Products Rule
+
+As your CPS becomes very high, the **Wait Time** for new buildings shortens dramatically. The MRPC rule usually holds, but for the **two most expensive products** in the game, the total cost difference is often so massive that waiting becomes necessary.
+
+**The CPS Threshold Rule:** You should only save directly for the more expensive of the two when the simpler MRPC rule points to the cheaper one, but:
+$$
+\text{Current CPS} \times \text{Wait Time for Cheaper Asset} > \text{Cost of Cheaper Asset}
+$$
+This condition ensures you don't over-invest in the cheaper asset and delay reaching the next major growth threshold.
+
+**Example with High-Tier Buildings:**
+
+| Building | Cost (C) | CPS Gained | MRPC (CPS/C) |
+| :--- | :--- | :--- | :--- |
+| **Alchemy Lab (A)** | 75,000,000,000 | 1,600,000 | $0.0000213$ |
+| **Shipment (B)** | 5,100,000,000 | 260,000 | $0.0000510$ |
+| **Your Current CPS** | N/A | 50,000 | N/A |
+
+Here, $\text{MRPC}$ clearly dictates **buying Shipment (B)** because $0.0000510 > 0.0000213$. The bot follows the MRPC until the returns equalize.
+
+---
+
+## 4. 📈 Upgrades: The Highest ROI Investment
 
 If buildings are your production assets, **upgrades are your technological edge.**
 
@@ -69,7 +124,7 @@ $$
 
 ---
 
-## 4. ☀️ Stochastic Events: Capturing Market Windfalls
+## 5. ☀️ Stochastic Events: Capturing Market Windfalls
 
 Golden cookies are like random, unexpected good fortune—a huge government contract, a sudden shift in consumer tastes, or a massive tax rebate. They are **stochastic positive productivity shocks.**
 
@@ -78,7 +133,7 @@ Golden cookies are like random, unexpected good fortune—a huge government cont
 
 ---
 
-## 5. 🏦 Wrinklers: The Compounding Savings Account
+## 6. 🏦 Wrinklers: The Compounding Savings Account
 
 Wrinklers are the best high-yield savings vehicle a Cookie Clicker business can use.
 
@@ -87,24 +142,25 @@ Wrinklers are the best high-yield savings vehicle a Cookie Clicker business can 
 
 ---
 
-## 6. 🏆 The Long-Run Growth Policy
+## 7. 🏆 The Long-Run Growth Policy
 
 The success of the bot's strategy mirrors sound **macroeconomic growth theory:**
 
 1.  **Maximize Production:** Continuous, high-volume output (rapid clicking).
 2.  **Smart Reinvestment (Capital Deepening):** Continuously buying assets with the highest **MRPC** (higher-tier buildings).
-3.  **Technological Adoption (Endogenous Growth):** Prioritizing all efficiency-boosting upgrades.
-4.  **Leverage Compounding:** Utilizing Wrinklers as high-yield capital reserves.
+3.  **Intertemporal Balance:** Using the **Wait Time** analysis to decide when to invest now versus when to save for large capital projects.
+4.  **Technological Adoption (Endogenous Growth):** Prioritizing all efficiency-boosting upgrades.
+5.  **Leverage Compounding:** Utilizing Wrinklers as high-yield capital reserves.
 
 This approach is about maximizing **long-term consumption (cookies)** by ensuring current investment decisions are always optimal—a principle directly out of the **Ramsey Growth Model.**
 
 ---
 
-## 7. Why Automation Wins The Economic Race
+## 8. Why Automation Wins The Economic Race
 
 Why is the bot so much better than a human at managing this simple economy?
 
-* **Perfection in MRPC Calculation:** The bot never makes an emotional or hasty purchase. It perfectly executes the MRPC formula every single time.
+* **Perfection in Calculation:** The bot perfectly executes the MRPC and Wait Time formulas every single time.
 * **Zero Opportunity Cost:** No idle time, no delayed responses, no forgetting to pop wrinklers. Every decision is executed at the theoretical economic optimum.
 * **Scale:** The bot makes **10,000+ cost-optimization decisions per minute**, a frequency and accuracy a human simply cannot match.
 
@@ -114,4 +170,12 @@ The bot doesn't just play the game; it executes a **perfect, continuous optimiza
 
 # 🎓 Conclusion
 
-Cookie Clicker beautifully models the core challenges of running a business: **
+Cookie Clicker beautifully models the core challenges of running a business: **scarce capital, investment choices, and the constant pursuit of efficiency.**
+
+The strategy employed by the bot isn't just about cheating the game; it's a powerful demonstration of:
+
+* **Intertemporal Analysis and Marginal Analysis**
+* **Return on Investment (ROI)**
+* **The Power of Automation in Economic Systems**
+
+It’s a fun, engaging introduction to what makes successful businesses grow—a relentless focus on getting the **best possible return** for every dollar spent.
