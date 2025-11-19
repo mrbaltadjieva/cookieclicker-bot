@@ -22,7 +22,7 @@ Our goal isn't just "more buildings." Our goal is **"best bang for our buck."**
 
 ---
 
-## 2. Maximizing Marginal Return Per Dollar
+## 2. Maximizing Marginal Return Per Dollar (MRPC)
 
 The biggest mistake a human player makes is buying whatever they can afford *right now*. A smart business owner, however, always calculates the **efficiency** of the investment.
 
@@ -70,7 +70,7 @@ $$
 
 **The Rule:** If $\text{Extra Earnings} > \text{Cheap Product Cost}$, **buy the cheap product now.**
 
-### 💡 Example: Buy Cheap Now
+### 💡 Example 1: The Advantage of Buying Now
 
 Imagine this scenario during the early game:
 
@@ -85,25 +85,18 @@ Imagine this scenario during the early game:
 
 Since the **Extra Earnings (13,000)** are much greater than the **Cheap Asset Cost (100)**, you should **BUY the cheap asset now**. The short-term increase in production far outweighs its initial cost.
 
-### 🌟 Special Case: The Two Most Expensive Products Rule
+### 🌟 Example 2: Comparing High-Tier Assets (MRPC Dominates)
 
-As your CPS becomes very high, the **Wait Time** for new buildings shortens dramatically. The MRPC rule usually holds, but for the **two most expensive products** in the game, the total cost difference is often so massive that waiting becomes necessary.
-
-**The CPS Threshold Rule:** You should only save directly for the more expensive of the two when the simpler MRPC rule points to the cheaper one, but:
-$$
-\text{Current CPS} \times \text{Wait Time for Cheaper Asset} > \text{Cost of Cheaper Asset}
-$$
-This condition ensures you don't over-invest in the cheaper asset and delay reaching the next major growth threshold.
-
-**Example with High-Tier Buildings:**
+Let's compare two later-stage buildings using cleaner, proportional numbers:
 
 | Building | Cost (C) | CPS Gained | MRPC (CPS/C) |
 | :--- | :--- | :--- | :--- |
-| **Alchemy Lab (A)** | 75,000,000,000 | 1,600,000 | $0.0000213$ |
-| **Shipment (B)** | 5,100,000,000 | 260,000 | $0.0000510$ |
-| **Your Current CPS** | N/A | 50,000 | N/A |
+| **Bank (A)** | 750,000 cookies | 16,000 CPS | $0.0213$ |
+| **Temple (B)** | 51,000 cookies | 2,600 CPS | $0.0510$ |
+| **Your Current CPS** | N/A | 500 CPS | N/A |
 
-Here, $\text{MRPC}$ clearly dictates **buying Shipment (B)** because $0.0000510 > 0.0000213$. The bot follows the MRPC until the returns equalize.
+* **MRPC Decision:** The **Temple (B)** has a much higher MRPC ($0.0510$) than the **Bank (A)** ($0.0213$).
+* **Bot Strategy:** The bot follows the highest MRPC and **buys the Temple (B)** repeatedly until the return on the Bank (A) is also worth pursuing. This ensures capital is constantly moving toward the most efficient growth path.
 
 ---
 
