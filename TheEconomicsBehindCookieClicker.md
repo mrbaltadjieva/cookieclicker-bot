@@ -22,24 +22,7 @@ Our goal isn't just "more buildings." Our goal is **"best bang for our buck."**
 
 ---
 
-## 2. Maximizing Marginal Return Per Dollar
-
-The biggest mistake a human player makes is buying whatever they can afford *right now*. A smart business owner, however, always calculates the **efficiency** of the investment.
-
-We need to know the **Marginal Return Per Cost (MRPC)** for every available building. This is the **most critical optimization formula** and dictates every purchasing decision.
-
-The formula for maximum purchasing efficiency is:
-
-$$
-MRPC = \frac{\text{Cookies Per Second (CPS) Gained}}{\text{Cost of Building}}
-$$
-
-| Action | Economic Principle | Strategy |
-| :--- | :--- | :--- |
-| Buying a Building | **Capital Investment** | **The Bot Strategy:** Always calculate the MRPC for *all* available buildings and buy the one with the **highest** value. This ensures capital is always allocated to the most efficient asset. |
-| Buying Multiple Buildings | **Diminishing Returns** | As you buy more of a single building type, its marginal contribution to your total CPS naturally gets smaller relative to newer, more powerful assets. Rational optimization means **shifting capital** toward higher-tier (and often more expensive) assets as you scale. |
-
----
+2. Maximizing Marginal Return Per DollarThe biggest mistake a human player makes is buying whatever they can afford right now. A smart business owner, however, always calculates the efficiency of the investment.We need to know the Marginal Return Per Cost (MRPC) for every available building. This is the most critical optimization formula and dictates every purchasing decision.The formula for maximum purchasing efficiency is:$$MRPC = \frac{\text{Cookies Per Second (CPS) Gained}}{\text{Cost of Building}}$$🧠 Practical Example: Choosing Your Next InvestmentImagine you have 1,000 cookies and are deciding between two buildings:BuildingCost (C)Base CPS (Gained)Calculation (MRPC=CCPS​)ResultFarm (Asset A)500 cookies40 CPS$\frac{40}{500} = 0.08$0.08Factory (Asset B)800 cookies80 CPS$\frac{80}{800} = 0.10$0.10Conclusion: Even though Asset B (Factory) is more expensive, its MRPC of 0.10 is higher than Asset A's 0.08. A rational optimizer must buy the Factory, as it provides more additional production per cookie spent. Always buy the asset with the highest MRPC value—that's how the bot makes every decision.ActionEconomic PrincipleStrategyBuying a BuildingCapital InvestmentThe Bot Strategy: Always calculate the MRPC for all available buildings and buy the one with the highest value. This ensures capital is always allocated to the most efficient asset.Buying Multiple BuildingsDiminishing ReturnsAs you buy more of a single building type, its marginal contribution to your total CPS naturally gets smaller relative to newer, more powerful assets. Rational optimization means shifting capital toward higher-tier (and often more expensive) assets as you scale.
 
 ## 3. 📈 Upgrades: The Highest ROI Investment
 
