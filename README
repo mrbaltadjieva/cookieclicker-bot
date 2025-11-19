@@ -32,16 +32,17 @@ The bot executes five key actions, all directly related to maximizing the **Marg
 
 ## 📈 2. The Economic Advisor (`economic_advisor.py`)
 
-This standalone tool allows the user to manually apply the bot's core economic logic to any two or more assets in the game, turning the theory into a practical calculator.
+This standalone tool allows the user to manually apply the bot's core economic logic to any assets in the game, turning the theory into a practical, menu-driven calculator.
 
 ### Analysis Modes:
 
-The script offers two critical decision-making modes, driven by inputting your current Cookies Per Second (CPS) and asset costs/gains:
+The script offers three critical decision-making modes, driven by inputting your current Cookies Per Second (CPS) and asset costs/gains:
 
 | Mode | Economic Goal | What it Answers |
 | :--- | :--- | :--- |
-| **1. MRPC Comparison** | **Marginal Analysis** | Which of the currently *affordable* assets (buildings or upgrades) gives the highest CPS gain per cookie spent? |
-| **2. Intertemporal Analysis** | **Opportunity Cost** | Should I *buy a cheap asset now* to boost CPS, or *save all my money* to reach the next huge expensive asset faster? |
+| **1. MRPC Comparison** (Choice 1) | **Marginal Analysis** | Which of the currently *available* assets (buildings or upgrades) gives the **highest CPS gain per cookie spent**? |
+| **2. Intertemporal Analysis** (Choice 2) | **Opportunity Cost** | Should I *buy a cheap asset now* to boost CPS, or *save all my money* to reach the next huge expensive asset faster? |
+| **3. Threshold Analysis** (Choice 3) | **Efficiency Threshold** | **What is the minimum CPS gain** the next expensive, unknown asset *must provide* to be a more efficient investment than your current best option? |
 
 ### How to Use the Advisor:
 
@@ -50,7 +51,7 @@ The script offers two critical decision-making modes, driven by inputting your c
     ```bash
     python economic_advisor.py
     ```
-3.  Follow the prompts to enter your current CPS and the details for the assets you are comparing.
+3.  Follow the prompts to enter your current CPS and select the analysis mode you wish to run.
 
 ---
 
